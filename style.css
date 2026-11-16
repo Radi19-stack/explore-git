@@ -1,0 +1,187 @@
+/* বেসিক রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #111;
+}
+
+/* ১. হেডার স্টাইল */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #0066cc;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.cart-btn {
+    background-color: #111;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+/* মূল কন্টেইনার */
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ২. হিরো ব্যানার স্টাইল */
+.hero-banner {
+    background-color: lightblue;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.explore-btn {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-image {
+
+    background-color: #222;
+    /* এখানে ইমেজ ব্যাকগ্রাউন্ড বা img ট্যাগ ব্যবহার করতে পারেন */
+    border-radius: 8px;
+    padding-bottom: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* ৩. সেকশন হেডার ও ফিল্টার */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 22px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background-color: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+/* ৪. প্রোডাক্ট গ্রিড স্টাইল */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-image-box {
+    background-color: #f1f1f1;
+    height: 300px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.product-desc {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
